@@ -8,5 +8,8 @@
         <Wire id="board_0_wire_1">
             <Length>2</Length>
         </Wire>
+        <Wire id="board_0_wire_2" to="board_0_wire_0 board_0_wire_1">
+            <Length>5</Length>
+        </Wire>
     </CableAssembly>
 </TestCell>

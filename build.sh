@@ -16,5 +16,15 @@ else
     echo Running scratch file...
     cd app
     python3 z.py
+  else
+    if [[ $1 = "z" ]]
+    then
+      echo Running unit tests...
+      python -m unittest
+    else
+      echo Running main...
+      cd app
+      python3 main.py
+    fi
   fi
 fi
