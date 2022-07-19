@@ -1,0 +1,14 @@
+<!-- https://www.w3schools.com/xml/xml_dtd_elements.asp -->
+<!-- Elements -->
+<!ELEMENT TestCell ANY>
+<!ELEMENT CableAssembly (Wire+, Datasheet?, VendorSource?, Length?, LengthUnit?)>
+<!ELEMENT Datasheet (#PCDATA)>
+<!ELEMENT VendorSource (#PCDATA)>
+<!ELEMENT Wire (Length?, LengthUnit?, Material?, Stranding?)>
+<!ELEMENT Length (#PCDATA)>
+<!ELEMENT LengthUnit (#PCDATA)>
+<!ELEMENT Material (#PCDATA)>
+<!ELEMENT Stranding (#PCDATA)>
+<!-- Attributes -->
+<!ATTLIST Wire id ID #REQUIRED>
+<!ATTLIST Wire to IDREFS #IMPLIED>
