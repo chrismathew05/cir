@@ -14,16 +14,16 @@ class CircuitGraph(nx.DiGraph):
     properties of that class.
     """
 
-    def __init__(self, fresh: bool = False) -> None:
+    def __init__(self, xml_file_path: str = "") -> None:
         """Constructor method
 
-        :param fresh: set True to get fresh Graph, otherwise loads from XML
+        :param xml_file_path: file path to XML file describing circuit
         """
 
         print("Constructing circuit graph...")
         super().__init__()
-        if not fresh:
-            [nodes, edges] = parse_circuit()
+        if xml_file_path:
+            [nodes, edges] = parse_circuit(xml_file_path)
             self.add_nodes(nodes)
             self.add_edges(edges)
         print("Circuit graph constructed.")
