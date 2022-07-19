@@ -4,7 +4,6 @@ graph.py - Contains the CircuitGraph class for handling all graph operations.
 
 import networkx as nx
 import json
-
 from typing import List
 
 
@@ -66,3 +65,6 @@ class CircuitGraph(nx.DiGraph):
         :return: list of paths from one node to another
         """
         return list(nx.all_simple_paths(self, from_node, to_node))
+
+    def draw(self) -> None:
+        nx.draw(self, with_labels=True)
