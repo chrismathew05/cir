@@ -1,3 +1,9 @@
+#!/bin/bash
+# This script provides three options: 
+#   1) generate + display docs [./build.sh "docs"]
+#   2) run scratch file [./build.sh "z"],
+#   3) run unit tests [./build.sh] 
+
 echo Saving requirements...
 source venv/bin/activate
 pip freeze > requirements.txt
