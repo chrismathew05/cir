@@ -12,7 +12,7 @@ This application is used at Intelline to document circuits and explore the relat
 
 ## Usage
 
-1. Construct XML (e.g. `circuit.xml`) + DTD (e.g. `circuit.dtd`) of circuit.
+1. Save XML (e.g. `test.xml`) + DTD (e.g. `test.dtd`) files in the `circuit` directory.
 2. Restart `main.ipynb`.
 3. Use the notebook to construct/explore your circuit.
 
