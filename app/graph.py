@@ -4,7 +4,6 @@ graph.py - Contains the CircuitGraph class for handling all graph operations.
 
 from app.parse import parse_circuit
 import networkx as nx
-import json
 from typing import List
 
 
