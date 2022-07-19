@@ -6,7 +6,7 @@
 
 echo Saving requirements...
 source venv/bin/activate
-pip freeze > requirements.txt
+pip freeze > requirements-prod.txt
 
 if [[ $1 = "docs" ]]
 then
