@@ -1,3 +1,7 @@
+"""
+graph.py - Contains the CircuitGraph class for handling all graph operations.
+"""
+
 import networkx as nx
 import json
 
