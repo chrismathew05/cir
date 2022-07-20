@@ -19,6 +19,6 @@ This application is used at Intelline to document circuits and explore the relat
 
 ## TODO
 
-- [ ] Complete sphinx documentation
-- [ ] Unit test cases
+- [x] Complete sphinx documentation
+- [x] Unit test cases
 - [ ] Finish constructiong circuit XML + DTD
