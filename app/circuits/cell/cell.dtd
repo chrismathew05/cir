@@ -1,0 +1,7 @@
+<!-- Elements -->
+<!ELEMENT TestCell ANY>
+<!ELEMENT Wire (#PCDATA)>
+<!-- Attributes -->
+<!ATTLIST Wire id ID #REQUIRED>
+<!ATTLIST Wire to IDREFS #IMPLIED>
+<!ATTLIST Wire dir CDATA #IMPLIED>

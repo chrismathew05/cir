@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TestCell [
+    <!ENTITY RedWire SYSTEM "wires/redwire.xml">
+    <!ENTITY BlueWire SYSTEM "wires/bluewire.xml">
+]>
+<?xml-model href="cell.dtd" type="application/xml-dtd"?>
+<TestCell>
+    <Wire id="w0" to="w1" dir="1">&RedWire;</Wire>
+    <Wire id="w1">&BlueWire;</Wire>
+</TestCell>

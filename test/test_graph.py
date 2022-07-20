@@ -12,7 +12,7 @@ class TestGraph(unittest.TestCase):
         """Sets up circuit graph instances for testing"""
 
         logger.info("\n=== TESTING GRAPH.PY ===")
-        cls.A = CircuitGraph("app/circuits/test.xml")
+        cls.A = CircuitGraph("app/circuits/test/test.xml")
 
     def test_find_cycles(self) -> None:
         """Test ability to find cycles"""

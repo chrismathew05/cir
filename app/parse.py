@@ -2,7 +2,7 @@
 parse.py - Contains parsing functions for XML structure defined in circuit.xml
 """
 
-import xml.etree.ElementTree as ET
+from lxml import etree as ET
 from typing import List
 
 
