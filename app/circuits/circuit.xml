@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?xml-model href="circuit.dtd" type="application/xml-dtd"?>
 <TestCell>
-    <CableAssembly>
-        <Wire id="board_0_wire_0">
-            <Length>1</Length>
-        </Wire>
-        <Wire id="board_0_wire_1">
-            <Length>2</Length>
-        </Wire>
-        <Wire id="board_0_wire_2" to="board_0_wire_0 board_0_wire_1">
-            <Length>5</Length>
-        </Wire>
-    </CableAssembly>
+    <VoltageSource id="v0" to="w0 w1"></VoltageSource>
+    <Diode id="d0" to="w0" dir="1"></Diode>
+    <Resistor id="r0"></Resistor>
+    <Wire id="w0" to="r0"></Wire>
+    <Wire id="w1" to="d0 r0" dir="1 0"></Wire>
 </TestCell>

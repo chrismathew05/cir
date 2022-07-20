@@ -8,7 +8,6 @@ from typing import List
 
 def parse_circuit(xml_file_path: str) -> List:
     """Obtains nodes and edges denoted by circuit structure in provided XML
-
     :param xml_file_path: file path to XML file describing circuit
     :return: two-element list [nodes, edges]
     """
@@ -25,6 +24,15 @@ def parse_circuit(xml_file_path: str) -> List:
 
             if "to" in attr:
                 to = attr["to"].split(" ")
-                edges.extend([(id, t) for t in to])
+
+                if "dir" in attr:
+                    dirs = attr["dir"].split(" ")
+
+                es = [
+                    (id, t) if "dir" not in attr else (id, t, {"directed": dirs[idx]})
+                    for idx, t in enumerate(to)
+                ]
+
+                edges.extend(es)
 
     return [nodes, edges]

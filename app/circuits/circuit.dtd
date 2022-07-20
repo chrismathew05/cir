@@ -8,6 +8,19 @@
 <!ELEMENT LengthUnit (#PCDATA)>
 <!ELEMENT Material (#PCDATA)>
 <!ELEMENT Stranding (#PCDATA)>
+<!ELEMENT VoltageSource ANY>
+<!ELEMENT Diode ANY>
+<!ELEMENT Resistor ANY>
 <!-- Attributes -->
 <!ATTLIST Wire id ID #REQUIRED>
 <!ATTLIST Wire to IDREFS #IMPLIED>
+<!ATTLIST Wire dir CDATA #IMPLIED>
+<!ATTLIST VoltageSource id ID #REQUIRED>
+<!ATTLIST VoltageSource to IDREFS #IMPLIED>
+<!ATTLIST VoltageSource dir CDATA #IMPLIED>
+<!ATTLIST Diode id ID #REQUIRED>
+<!ATTLIST Diode to IDREFS #IMPLIED>
+<!ATTLIST Diode dir CDATA #IMPLIED>
+<!ATTLIST Resistor id ID #REQUIRED>
+<!ATTLIST Resistor to IDREFS #IMPLIED>
+<!ATTLIST Resistor dir CDATA #IMPLIED>
