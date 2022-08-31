@@ -1,7 +1,15 @@
-<Params>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Wire [
+    <!ELEMENT Wire ANY>
+    <!ELEMENT Colour (#PCDATA)>
+    <!ELEMENT Length (Qty, Unit)>
+    <!ELEMENT Qty ANY>
+    <!ELEMENT Unit ANY>
+]>
+<Wire>
+    <Colour>Blue</Colour>
     <Length>
         <Qty>10</Qty>
         <Unit>Inches</Unit>
     </Length>
-    <Colour>Blue</Colour>
-</Params>
+</Wire>

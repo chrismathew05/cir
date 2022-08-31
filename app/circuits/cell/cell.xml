@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE TestCell [
-    <!ENTITY RedWire SYSTEM "wires/redwire.xml">
-    <!ENTITY BlueWire SYSTEM "wires/bluewire.xml">
+<!DOCTYPE Cell [
+    <!-- Elements -->
+    <!ELEMENT Cell ANY>
+    <!-- Attributes -->
+    <!ATTLIST Cell xmlns:xi CDATA #FIXED "http://www.w3.org/2001/XInclude">
+    <!ATTLIST xi:include
+        href CDATA #REQUIRED
+        id ID #REQUIRED
+    >
+    <!ELEMENT xi:include EMPTY>
 ]>
-<?xml-model href="cell.dtd" type="application/xml-dtd"?>
-<TestCell>
-    <Wire id="w0" to="w1" dir="1">&RedWire;</Wire>
-    <Wire id="w1">&BlueWire;</Wire>
-</TestCell>
+<Cell xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="ca/ca0.xml" id="caCool" />
+    <xi:include href="ca/ca0.xml" id="caHot" />
+</Cell>

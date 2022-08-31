@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE CableAssembly [
+    <!-- Elements -->
+    <!ELEMENT CableAssembly ANY>
+    <!ELEMENT xi:include EMPTY>
+    <!-- Attributes -->
+    <!ATTLIST CableAssembly xmlns:xi CDATA #FIXED "http://www.w3.org/2001/XInclude">
+    <!ATTLIST xi:include
+        href CDATA #REQUIRED
+        id ID #REQUIRED
+    >
+]>
+<CableAssembly xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="../wires/redwire.xml" id="pole1" />
+    <xi:include href="../wires/redwire.xml" id="pole2" />
+    <xi:include href="../wires/bluewire.xml" id="pole3" />
+
+    <!-- <xi:include href="../wires/redwire.xml" />
+    <xi:include href="../wires/bluewire.xml" /> -->
+</CableAssembly>

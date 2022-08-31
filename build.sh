@@ -11,11 +11,11 @@ pip freeze > requirements-prod.txt
 if [[ $1 = "docs" ]]
 then
 
-echo Building docs...
-cd docs
-make html
-cd build/html
-explorer.exe index.html
+  echo Building docs...
+  cd docs
+  make html
+  cd build/html
+  explorer.exe index.html
 else
   if [[ $1 = "z" ]]
   then
